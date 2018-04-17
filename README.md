@@ -41,12 +41,13 @@ Clone & compile:
     cd open-ethereum-pool
     make
 
-Install redis-server: sudo apt-get install redis-server
-Start redis-server: sudo service redis-server start
+- Install redis-server: sudo apt-get install redis-server.
+- Start redis-server: sudo service redis-server start.
 
 ### Running Pool
 - Change name config.example.json to config.json before running pool: cp config.example.json config.json
 - Open new tab to run geth and Wait in half a day to run.
+- Start rpc: geth --rpc
 - Running:
     ./build/bin/open-ethereum-pool config.json
 
