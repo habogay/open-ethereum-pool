@@ -33,7 +33,7 @@ Dependencies:
 **I highly recommend to use Ubuntu 16.04 LTS.**
 
 First install  [go-ethereum](https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu).
-
+Install go-lang https://medium.com/@patdhlk/how-to-install-go-1-9-1-on-ubuntu-16-04-ee64c073cd79
 Clone & compile:
 
     git config --global http.https://gopkg.in.followRedirects true
@@ -41,10 +41,13 @@ Clone & compile:
     cd open-ethereum-pool
     make
 
-Install redis-server.
+Install redis-server: sudo apt-get install redis-server
+Start redis-server: sudo service redis-server start
 
 ### Running Pool
-
+- Change name config.example.json to config.json before running pool: cp config.example.json config.json
+- Open new tab to run geth and Wait in half a day to run.
+- Running:
     ./build/bin/open-ethereum-pool config.json
 
 You can use Ubuntu upstart - check for sample config in <code>upstart.conf</code>.
