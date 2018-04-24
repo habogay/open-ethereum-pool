@@ -308,7 +308,7 @@ I recommend this deployment strategy:
 * If `poolFeeAddress` is not specified all pool profit will remain on coinbase address. If it specified, make sure to periodically send some dust back required for payments.
 * To change website, after edit code, must:
   - Go to folder ~/open-ethereum-pool/www and run: ./build.sh to rebuild
-  - Delete dist 'folder' in /var/www/dist: rm -rf /var/www/dist
+  - Go to root directory, delete dist 'folder' in /var/www/dist: rm -rf /var/www/dist
   - Go to ~/open-ethereum-pool/www to copy 'dist' to /var/www/ : cp -rf dist/ /var/www/
 
 ### Alternative Ethereum Implementations
