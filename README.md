@@ -307,7 +307,7 @@ I recommend this deployment strategy:
 * Don't run payouts and unlocker modules as part of mining node. Create separate configs for both, launch independently and make sure you have a single instance of each module running.
 * If `poolFeeAddress` is not specified all pool profit will remain on coinbase address. If it specified, make sure to periodically send some dust back required for payments.
 * To change website, after edit code, must:
-  - cd to folder ~/open-ethereum-pool/www and run: ./build.sh to rebuild
+  - Go to folder ~/open-ethereum-pool/www and run: ./build.sh to rebuild
   - Delete dist 'folder' in /var/www/dist: rm -rf /var/www/dist
   - Go to ~/open-ethereum-pool/www to copy 'dist' to /var/www/ : cp -rf dist/ /var/www/
 
